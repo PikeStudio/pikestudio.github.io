@@ -1,0 +1,42 @@
+html {
+  background-color: white;
+}
+body {
+  // background-color: black;
+  color: white;
+  font-family: Helvetica;
+}
+
+.square-container {
+  transform: rotateX(50deg) rotateY(-5deg) rotateZ(45deg);
+  overflow: hidden;
+  position: fixed;
+  .square {
+    margin-left: 260px;
+    background-color: #5D5E5A;
+    height: 512px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    animation: drive 4s infinite linear;
+    .road-line {
+      // max-width: 50%;
+      transform: rotateZ(90deg);
+      background-color: white;
+      // border: 1px solid red;
+      height: 10px;
+      width: 60px;
+    }
+  }
+}
+
+@keyframes drive {
+  0% { 
+    transform: translateY(-512px); 
+  }
+  to { 
+    transform: translateY(512px); 
+  }
+}

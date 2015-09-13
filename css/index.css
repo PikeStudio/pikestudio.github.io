@@ -1,0 +1,53 @@
+html {
+  background-color: white; }
+
+body {
+  color: white;
+  font-family: Helvetica; }
+
+.square-container {
+  -webkit-transform: rotateX(50deg) rotateY(-5deg) rotateZ(45deg);
+  transform: rotateX(50deg) rotateY(-5deg) rotateZ(45deg);
+  overflow: hidden;
+  position: fixed; }
+  .square-container .square {
+    margin-left: 260px;
+    background-color: #5D5E5A;
+    height: 512px;
+    width: 200px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-animation: drive 4s infinite linear;
+    animation: drive 4s infinite linear; }
+    .square-container .square .road-line {
+      -webkit-transform: rotateZ(90deg);
+      transform: rotateZ(90deg);
+      background-color: white;
+      height: 10px;
+      width: 60px; }
+
+@-webkit-keyframes drive {
+  0% {
+    -webkit-transform: translateY(-512px);
+    transform: translateY(-512px); }
+  to {
+    -webkit-transform: translateY(512px);
+    transform: translateY(512px); } }
+
+@keyframes drive {
+  0% {
+    -webkit-transform: translateY(-512px);
+    transform: translateY(-512px); }
+  to {
+    -webkit-transform: translateY(512px);
+    transform: translateY(512px); } }
