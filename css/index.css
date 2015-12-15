@@ -1,9 +1,11 @@
-html {
-  background-color: white; }
-
 body {
-  color: white;
-  font-family: Helvetica; }
+  font-family: "News Cycle", Helvetica, sans-serif; }
+
+.main-content-container {
+  font-size: 3em;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center; }
 
 .square-container {
   -webkit-transform: rotateX(50deg) rotateY(-5deg) rotateZ(45deg);

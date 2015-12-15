@@ -1,10 +1,12 @@
-html {
-  background-color: white;
-}
 body {
-  // background-color: black;
-  color: white;
-  font-family: Helvetica;
+  font-family: "News Cycle", Helvetica, sans-serif;
+}
+
+.main-content-container {
+  font-size: 3em;
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
 }
 
 .square-container {
